@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
+		<TargetFrameworks>net10.0</TargetFrameworks>
 		<LangVersion>preview</LangVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
@@ -22,12 +22,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.402" PrivateAssets="all" />
 
-		<ProjectReference
-			Include="..\MaterialColorUtilities.SourceGenerators\MaterialColorUtilities.SourceGenerators.csproj"
-			OutputItemType="Analyzer"
-			ReferenceOutputAssembly="false"/>
+		<ProjectReference Include="..\MaterialColorUtilities.SourceGenerators\MaterialColorUtilities.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 
 		<!-- Pack the source generator to the right package folder -->
 		<None Include="..\MaterialColorUtilities.SourceGenerators\bin\$(Configuration)\netstandard2.0\MaterialColorUtilities.SourceGenerators.dll" PackagePath="analyzers\dotnet\roslyn4.0\cs" Pack="true" Visible="false" />
