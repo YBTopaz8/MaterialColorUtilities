@@ -6,7 +6,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<Version Condition="$(Version) == ''">0.1.0</Version>
+		<Version Condition="$(Version) == ''">1.0.0</Version>
 		<Description>C# implementation of Google's Material color utilities</Description>
 		<PackageProjectUrl>https://github.com/albi005/MaterialColorUtilities</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/albi005/MaterialColorUtilities</RepositoryUrl>
